@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>students</h1>
+    <ul>
+    {{#each students}}
+    <li>{{id}} - {{name}}</li>
+    {{/each}}
+    </ul>
+</body>
+</html>
+
+
+
+    {{!-- let output = "<ul>";
+    for (let i = 0; i < students.length; i++) {
+        const student = students[i];
+        output += "<li><a href='/students/" + student.id + "'>" + student.name + "</a><li>";
+    }
+output +="</ul>"
+res.send(output) --}}
